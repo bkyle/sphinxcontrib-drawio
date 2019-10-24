@@ -90,6 +90,7 @@ def render_drawio(self: SphinxTranslator, node: drawio, in_filename: str,
 
     drawio_args = [
         "draw.io.exe" if platform.system() == "Windows" else "drawio",
+        "--no-sandbox",
         "--export",
         "--format",
         output_format,
