@@ -12,7 +12,7 @@ from docutils.parsers.rst import directives
 from sphinx.application import Sphinx
 from sphinx.errors import SphinxError
 from sphinx.util import logging, ensuredir
-from sphinx.util.docutils import SphinxDirective, SphinxTranslator
+from sphinx.util.docutils import SphinxDirective
 from sphinx.util.fileutil import copy_asset
 from sphinx.writers.html import HTMLTranslator
 
@@ -73,7 +73,7 @@ class DrawIO(SphinxDirective):
         return [node]
 
 
-def render_drawio(self: SphinxTranslator, node: drawio, in_filename: str,
+def render_drawio(self: "SphinxTranslator", node: drawio, in_filename: str,
                   output_format: str) -> str:
     """Render drawio file into an output image file."""
     hash_key = "".join(node.attributes).encode()
