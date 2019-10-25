@@ -20,7 +20,7 @@ setuptools.setup(
     author_email="modelmat@outlook.com.au",
     description="Sphinx Extension to include draw.io files",
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    # long_description_content_type="text/markdown",
     url="https://github.com/Modelmat/sphinxcontrib-drawio",
     packages=['sphinxcontrib'],
     classifiers=[
