@@ -7,10 +7,11 @@ import setuptools
 # ret = subprocess.run("git describe --tags --abbrev=0", stdout=subprocess.PIPE,
 #                      stderr=subprocess.PIPE, check=True, shell=True)
 # version = ret.stdout.decode("utf-8").strip()
-version = "1.0.1"
+version = "0.0.3"
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# with open("README.md", "r") as fh:
+#     long_description = fh.read()
+long_description = ""
 
 setuptools.setup(
     name="sphinxcontrib-drawio",
